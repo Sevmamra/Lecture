@@ -10,10 +10,10 @@ from aiogram.dispatcher import FSMContext
 from aiogram.utils import executor
 from datetime import datetime, timedelta
 
-API_TOKEN = 'YOUR BOT TOKEN'
-CHANNEL_ID = -1002316557460
+API_TOKEN = '7664447269:AAG8bJ-s3gax4ZbEZ2xiRP6O1N2ezNWIGe4'
+CHANNEL_ID = -1002303981738
 CHANNEL_LINK = 'https://t.me/+g-i8Vohdrv44NDRl'
-ADMIN_ID = 7401896933
+ADMIN_ID = 6567162029
 
 bot = Bot(token=API_TOKEN, parse_mode="HTML")
 dp = Dispatcher(bot)
