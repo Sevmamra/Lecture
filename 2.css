@@ -1,0 +1,61 @@
+.hero {
+  position: relative;
+  height: 550px;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../images/hero-bg1.jpg') no-repeat center center;
+  background-size: cover;
+  transition: background-image 1s ease-in-out;
+  z-index: 0;
+}
+
+/* Overlay on background image only */
+.hero-bg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* Hero content overlay */
+.hero-overlay {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 100px 20px;
+  color: #fff;
+}
+
+.hero-title-img {
+  height: 360px;
+  margin: -150px auto 20px auto;
+  display: block;
+}
+
+.explore-btn {
+  background: red;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 22px;
+  transition: 0.3s;
+  box-shadow: 0 4px 12px rgba(255, 0, 0, 0.4);
+  display: inline-block;
+  margin: 50px auto 0 auto;
+}
+
+.explore-btn:hover {
+  background: darkred;
+}
